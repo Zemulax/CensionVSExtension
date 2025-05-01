@@ -90,10 +90,10 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="WebUI\dist\**\*">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
+    <Content Include="WebUI\dist\assets\index-D8WMpHXA.css" />
+    <Content Include="WebUI\dist\assets\index-dkxxMbKU.js" />
+    <Content Include="WebUI\dist\index.html" />
+    <Content Include="WebUI\dist\vite.svg" />
     <VSCTCompile Include="CensionExtensionPackage.vsct">
       <ResourceName>Menus.ctmenu</ResourceName>
     </VSCTCompile>
