@@ -8,6 +8,12 @@ namespace CensionExtension
 {
     internal class test
     {
-        //add a method to add 3 numbers
+        //add a method to print
+        public static void Print(string str)
+        {
+            Console.WriteLine(str);
+        }
+
+
     }
 }
