@@ -1,7 +1,8 @@
-# CensionExtension
+# Cension
 
 This is the product of my dissertation research.
-Cension is a C# coding extension powered by a C# fine-tuned model.
-It integrated with Visual Studio to provide seamless interaction.
+Cension is an AI-Powered Code Generation for Visual Studio.
 
-currently,Cension posesses UI chat feature and Context Awareness where it can generate code based on comments.
+Cension generates code instantly in Visual Studio using AI, with support for C# only.
+Unlike generic AI tools, Cension speicializes in chat interaction and context awareness
+
