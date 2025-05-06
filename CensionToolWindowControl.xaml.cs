@@ -6,6 +6,7 @@ using System.Windows.Controls;
 using System.Windows.Interop;
 using System.IO;
 using Microsoft.Web.WebView2.Core;
+using System.Reflection;
 
 namespace CensionExtension
 {
@@ -27,24 +28,20 @@ namespace CensionExtension
         {
             try
             {
-                // 1. Get the output directory where the build files are located
-                string distPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "WebUI", "dist");
+                // 1. Get the extension's installation directory (where VSIX deploys files)
+                string extensionPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+                string distPath = Path.Combine(extensionPath, "WebUI", "dist");
 
-                // Debug confirmation
-                //MessageBox.Show($"Will serve from:\n{distPath}");
-
-                // 2. Check if the dist directory and index.html exist
+                // 2. Check if index.html exists
                 string indexPath = Path.Combine(distPath, "index.html");
                 if (!File.Exists(indexPath))
                 {
-                    MessageBox.Show($"CRITICAL: index.html not found at:\n{indexPath}\n" +
-                                    "Ensure that:\n" +
-                                    "1. Vite build output exists\n" +
-                                    "2. Files are copied to output dir via .csproj");
+                    MessageBox.Show($"ERROR: WebUI files missing!\nExpected at: {indexPath}\n" +
+                                  "Ensure 'WebUI/dist' is included in the VSIX as 'Content'.");
                     return;
                 }
 
-                // 3. Set up WebView2 environment
+                // 3. Set up WebView2 environment (cache in LocalAppData)
                 string userDataFolder = Path.Combine(
                     Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
                     "cension",
@@ -53,7 +50,7 @@ namespace CensionExtension
                 var env = await CoreWebView2Environment.CreateAsync(null, userDataFolder);
                 await webView.EnsureCoreWebView2Async(env);
 
-                // 4. Set virtual hostname mapping
+                // 4. Map virtual hostname to the folder
                 string virtualHostName = "ExtensionUI";
                 webView.CoreWebView2.SetVirtualHostNameToFolderMapping(
                     virtualHostName,
@@ -61,14 +58,13 @@ namespace CensionExtension
                     CoreWebView2HostResourceAccessKind.Allow
                 );
 
-                // 5. Load the extensionUI using a fake HTTPS origin
-                webView.Source = new Uri("https://" + virtualHostName + "/index.html");
+                // 5. Load the UI
+                webView.Source = new Uri($"https://{virtualHostName}/index.html");
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Fatal Error: {ex.Message}");
             }
-
         }
     }
 }

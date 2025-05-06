@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="CensionExtension.0e81ee6e-efe8-4b3b-9e66-d34a456427d5" Version="1.1" Language="en-US" Publisher="MOSES HARAZI" />
+        <Identity Id="CensionExtension.0e81ee6e-efe8-4b3b-9e66-d34a456427d6" Version="1.1" Language="en-US" Publisher="MOSES HARAZI" />
         <DisplayName>CensionExtension</DisplayName>
         <Description xml:space="preserve">Empty VSIX Project.</Description>
     </Metadata>

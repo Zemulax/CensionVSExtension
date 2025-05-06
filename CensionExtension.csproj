@@ -81,7 +81,7 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="17.14.1043-preview2" NoWarn="NU1604" />
     <PackageReference Include="Microsoft.Web.WebView2">
-      <Version>1.0.3179.45</Version>
+      <Version>1.0.3240.44</Version>
     </PackageReference>
     <PackageReference Include="WebView2.Runtime.X64">
       <Version>136.0.3240.50</Version>
@@ -94,10 +94,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="WebUI\dist\assets\index-D8WMpHXA.css" />
-    <Content Include="WebUI\dist\assets\index-dkxxMbKU.js" />
-    <Content Include="WebUI\dist\index.html" />
-    <Content Include="WebUI\dist\vite.svg" />
+    <Content Include="WebUI\dist\**\*" LinkBase="WebUI\dist">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <VSCTCompile Include="CensionExtensionPackage.vsct">
       <ResourceName>Menus.ctmenu</ResourceName>
     </VSCTCompile>
