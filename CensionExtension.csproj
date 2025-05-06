@@ -94,6 +94,19 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="code.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Resources\code.png" />
+    <Content Include="Resources\finetuning.jpg">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Resources\magicWand.png">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Resources\magicwand16.png" />
+    <Content Include="Resources\magicwand32.png" />
     <Content Include="WebUI\dist\**\*" LinkBase="WebUI\dist">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>

@@ -47,26 +47,19 @@
           If you do not want an image next to your command, remove the Icon node />  -->
 			<Button guid="guidCensionExtensionPackageCmdSet" id="CensionToolWindowCommandId" priority="0x0100" type="Button">
 				<Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1" />
-				<Icon guid="guidImages" id="bmpPicX" />
+				<Icon guid="guidImages" id="1" />
 				<Strings>
-					<ButtonText>Interact With Cension</ButtonText>
+					<ButtonText>Cension</ButtonText>
 				</Strings>
 			</Button>
 			<!--context awareness button-->
 			<Button guid="guidCensionExtensionPackageCmdSet" id="CensionContextAwarenessCommandId" priority="0x0101" type="Button">
 				<Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS2" />
-				<Icon guid="guidImages" id="bmpPic1" />
+				<Icon guid="guidImages1" id="1" />
 				<Strings>
 					<ButtonText>Generate Code from Comment</ButtonText>
 				</Strings>
 			</Button>
-		  <Button guid="guidCensionExtensionPackageCmdSet1" id="cmdidstopcrashes" priority="0x0100" type="Button">
-        <Parent guid="guidCensionExtensionPackageCmdSet1" id="MyMenuGroup" />
-        <Icon guid="guidImages1" id="bmpPic1" />
-        <Strings>
-          <ButtonText>Invoke stopcrashes</ButtonText>
-        </Strings>
-      </Button>
     </Buttons>
 
 
@@ -77,7 +70,8 @@
             bitmap strip containing the bitmaps and then there are the numeric ids of the elements used
             inside a button definition. An important aspect of this declaration is that the element id
             must be the actual index (1-based) of the bitmap inside the bitmap strip. -->
-			<Bitmap guid="guidImages" href="Resources\CensionToolWindowCommand.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
+			<Bitmap guid="guidImages" href="Resources\code.png" usedList="1" />
+			<Bitmap guid="guidImages1" href="Resources\magicwand16.png" usedList="1" />
 		  
     </Bitmaps>
 	  <Groups>
@@ -86,18 +80,6 @@
       </Group>
     </Groups>
   </Commands>
-
-	
-
-	<!-- <KeyBindings>
-		<KeyBinding guid="guidCensionExtensionPackageCmdSet"
-					id="CensionContextAwarenessCommandId"
-					editor="guidVSStd97"
-				key1="K"
-				mod1="CONTROL"
-				mod2="ALT"
-					/>
-	</KeyBindings> -->
 
 
 	<Symbols>

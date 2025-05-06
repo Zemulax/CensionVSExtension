@@ -3,7 +3,8 @@
     <Metadata>
         <Identity Id="CensionExtension.0e81ee6e-efe8-4b3b-9e66-d34a456427d6" Version="1.1" Language="en-US" Publisher="MOSES HARAZI" />
         <DisplayName>CensionExtension</DisplayName>
-        <Description xml:space="preserve">Empty VSIX Project.</Description>
+        <Description xml:space="preserve">Cension is an AI-Powered Code Generation tool for Visual StudioCension is an AI-Powered Code Generation for Visual Studio</Description>
+        <Icon>code.png</Icon>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">
