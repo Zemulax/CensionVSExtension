@@ -6,7 +6,7 @@ Cension is an AI-Powered Code Generation for Visual Studio.
 Cension generates code instantly in Visual Studio using AI, with support for C# only.
 Unlike generic AI tools, Cension speicializes in chat interaction and context awareness.
 
-# To run the censin:
+# To run the cension:
 1. Clone the repo in visual studio
 2. Build the project
 3. Locate the project in windows explorer
