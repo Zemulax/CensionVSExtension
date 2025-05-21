@@ -6,6 +6,10 @@ The project evaluates the benefits of domain-specific tuning over general-purpos
 3. benchmarked against 30 LeetCode C# tasks.
 4. benchmarked against GPT-4o
 
+# Benchmark results
+![Results](https://github.com/user-attachments/assets/cc0f9bfa-14fd-4e7c-a4b9-2a9d09ad99b8)
+
+
 # Tech Stack
 Python (for model training and finetuning)
 React + Typescript for the UI
@@ -13,6 +17,11 @@ C# for building the extension and linking the UI to the extension framework
 
 # Demo
 ![newlocationCension](https://github.com/user-attachments/assets/baec9d6d-730c-4c8c-848b-f8ac39e5feb1)
+Cension in VS
+
+![censionOnly](https://github.com/user-attachments/assets/f2badeac-0e7e-4703-99fd-61bba738e6b8)
+Cension UI
+
 
 
 # To run the cension:
