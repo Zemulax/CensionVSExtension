@@ -1,7 +1,7 @@
 # Cension Overview
 Cension is a fine-tuned Transformer-based langauge model optimized for C# code. 
 The project evaluates the benefits of domain-specific tuning over general-purpose models like GPT-4o. it includes:
-1. a visual studio extension for real-time code prompting.
+1. a visual studio extension for real-time code prompting with context awareness capability where code can be generated directly inside a class through comments.
 2. Evaluaiton pipeline accross correctness, efficiency and maintainability.
 3. benchmarked against 30 LeetCode C# tasks.
 4. benchmarked against GPT-4o
@@ -11,9 +11,9 @@ The project evaluates the benefits of domain-specific tuning over general-purpos
 
 
 # Tech Stack
-Python (for model training and finetuning)
-React + Typescript for the UI
-C# for building the extension and linking the UI to the extension framework
+1. Python (for model training and finetuning)
+2. React + Typescript for the UI
+3. C# for building the extension and linking the UI to the extension framework
 
 # Demo
 ![newlocationCension](https://github.com/user-attachments/assets/baec9d6d-730c-4c8c-848b-f8ac39e5feb1)
