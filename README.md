@@ -11,9 +11,10 @@ The project evaluates the benefits of domain-specific tuning over general-purpos
 
 
 # Tech Stack
-1. Python (for model training and finetuning)
-2. React + Typescript for the UI
-3. C# for building the extension and linking the UI to the extension framework
+1. Python 
+2. React + Typescript
+3. C#'
+4. Figma
 
 # Demo
 ![newlocationCension](https://github.com/user-attachments/assets/baec9d6d-730c-4c8c-848b-f8ac39e5feb1)
@@ -21,6 +22,9 @@ Cension in VS
 
 ![censionOnly](https://github.com/user-attachments/assets/f2badeac-0e7e-4703-99fd-61bba738e6b8)
 Cension UI
+
+# System Diagram
+![image](https://github.com/user-attachments/assets/a6951201-563f-480a-9b39-7b17f7041a9a)
 
 
 
